@@ -22,5 +22,5 @@ Incorporate this script into your web page to rotate through the URLs defined in
         scriptElement.src = url;
         document.body.appendChild(scriptElement);
     }
-    loadUrlRotator('URL_OF_YOUR_ROTATOR_SCRIPT');
+    loadUrlRotator('https://cdn.jsdelivr.net/gh/eswhik/url-rotador-javascript/app.js');
 </script>
