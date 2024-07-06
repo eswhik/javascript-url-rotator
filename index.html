@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Rotator</title>
+</head>
+
+<body>
+    <p>You will be redirected to a new URL shortly...</p>
+
+    <script>
+        const config = {
+            urls: [
+                'https://example.com/url_1',
+                'https://example.com/url_2',
+                'https://example.com/url_3'
+            ],
+            redirectDelay: 3000 // Time before redirection in milliseconds
+        };
+
+        function loadUrlRotador(url) {
+            const scriptElement = document.createElement('script');
+            scriptElement.src = url;
+            document.body.appendChild(scriptElement);
+        }
+        loadUrlRotador('app.js');
+    </script>
+</body>
+
+</html>
